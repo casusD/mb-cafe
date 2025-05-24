@@ -4,7 +4,7 @@ import styles from './Marquee.module.scss';
 
 interface Props {
 	text: string;
-	id: string;
+	id?: string;
 }
 
 export default function Marquee({ text, id }: Props) {
