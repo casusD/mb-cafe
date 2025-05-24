@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useLanguage } from '@/app/context/LanguageContext';
 import { MenuProps } from '@/app/items/itemsData';
 import { X } from 'lucide-react';
