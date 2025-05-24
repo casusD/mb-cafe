@@ -61,12 +61,11 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
 	const t = (key: string) => {
 		const keys = key.split('.');
-		// eslint-disable-next-line @typescript-eslint/no-explicit-any
-		let value: any = messages[currentLanguage];
+		let value: unknown = messages[currentLanguage];
 
 		for (const k of keys) {
-			if (value && typeof value === 'object') {
-				value = value[k];
+			if (value && typeof value === 'object' && k in value) {
+				value = (value as Record<string, unknown>)[k];
 			} else {
 				return key;
 			}

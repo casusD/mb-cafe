@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import { useLanguage } from '@/app/context/LanguageContext';
 import { MenuProps } from '@/app/items/itemsData';
 import { X } from 'lucide-react';
@@ -32,6 +31,7 @@ export function FoodModal({ item, onClose, section }: IFood) {
 					<X onClick={onClose} />
 				</span>
 				<div>
+					{/* eslint-disable-next-line @next/next/no-img-element */}
 					<img src={item.url} alt='Food' />
 				</div>
 				<div className={styles.modalInner}>
