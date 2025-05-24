@@ -1,0 +1,44 @@
+@use './_light.scss' as light;
+@use './_dark.scss' as dark;
+
+.light-theme {
+--primary: #{light.$primary};
+--secondary: #{light.$secondary};
+--text: #{light.$text};
+--text-color: #{light.$text-color};
+--text-passive: #{light.$text-passive};
+--svg-color: #{light.$svg-color};
+--background: #{light.$background};
+--menu-color: #{light.$menu-color};
+--background-overlay: #{light.$background-overlay};
+--photo-overlay: #{light.$photo-overlay};
+--stroke: #{light.$stroke};
+--discount-price: #{light.$discount-price};
+--multiple-price: #{light.$multiple-price};
+--sale: #{light.$sale};
+--navbar-shadow: #{light.$navbar-shadow};
+--footer-shadow: #{light.$footer-shadow};
+--general-white: #{light.$general-white};
+--blur: #{light.$blur};
+}
+
+.dark-theme {
+--primary: #{dark.$primary};
+--secondary: {dark.$secondary};
+--text: #{dark.$text};
+--text-color: #{dark.$text-color};
+--text-passive: #{dark.$text-passive};
+--svg-color: #{dark.$svg-color};
+--background: #{dark.$background};
+--menu-color: #{dark.$menu-color};
+// --background-overlay: #{dark.$background-overlay};
+// --photo-overlay: #{dark.$photo-overlay};
+--stroke: #{dark.$stroke};
+// --discount-price: #{dark.$discount-price};
+--multiple-price: #{dark.$multiple-price};
+// --sale: #{dark.$sale};
+// --navbar-shadow: #{dark.$navbar-shadow};
+// --footer-shadow: #{dark.$footer-shadow};
+// --general-white: #{dark.$general-white};
+// --blur: #{dark.$blur};
+}

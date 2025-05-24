@@ -1,0 +1,16 @@
+.theme {
+	width: 105;
+	height: 28px;
+	border-radius: 50px;
+	font-size: 12px;
+	background-color: var(--primary);
+	color: var(--text-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	margin: 0 auto;
+	margin-top: 1.5rem;
+	margin-bottom: 5rem;
+	cursor: pointer;
+}
